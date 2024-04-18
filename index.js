@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function editarGasto(gasto) {
         const descricao = prompt('Digite a nova descrição:', gasto.descricao);
         if (descricao === null) {
-            return; // Usuário cancelou a edição
+            return; 
         }
         const valor = parseFloat(prompt('Digite o novo valor:', gasto.valor));
         if (isNaN(valor) || valor <= 0) {
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         const categoria = prompt('Digite a nova categoria:', gasto.categoria);
         if (categoria === null) {
-            return; // Usuário cancelou a edição
+            return; 
         }
 
         gasto.descricao = descricao;
